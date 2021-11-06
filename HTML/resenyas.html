@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+    <title> World Mobile - Escribir una reseña</title>
+    <link rel="stylesheet" href="../CSS/resenyas.css">
+</head>
+<body>
+    <header>
+        <div id= "texto_principal">
+            <h1 id= "titulo_principal"> World Mobile</h1>
+            <h4 id= "subtitulo_principal"> ¡Cuenta tu experiencia con un movil a otros usuarios!</h4>
+        </div>
+    </header>
+    <nav>
+        <ul id= "menu">
+			<li class="menu_block"><a class="link_menu" href="principal.html">Menu Princial</a></li>
+            <li class="menu_block"><a class="link_menu" href="ultimos_lanzamientos.html"> Ultimos lanzamientos </a></li>
+            <li class="menu_block"><a class="link_menu" href="recomendador.html"> Recomendador </a></li>
+            <li id="menu_seleccionado"> <a class="link_menu" href=""> Escribir una reseña </a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="formulario">
+            <h2 id="titulo_reseñas"> Escriba su opinión </h2>
+		<form>
+			<fieldset>
+				<legend> Datos del usuario: </legend>
+				<br>
+				<label for = "nombre"> Nombre </label>
+				<input type = "text" name = "nombre" id = "nombre"><br>
+				<br>
+				<label for = "e-mail"> E-Mail </label>
+				<input type = "email" name = "e-mail" id = "e-mail"><br><br>
+				<label> Edad: </label><br>
+				<label for="mayor">Mayor de 18</label>
+				<input type="radio" name="edad" id="mayor" value="+18">
+				<label for="menor">Menor de 18</label>
+				<input type="radio" name="edad" id="menor" value="-18">
+			</fieldset>
+			<br>
+			<fieldset>
+				<legend> Datos del teléfono: </legend>
+				<br>
+				<label for = "marca"> Marca </label>
+				<select id = "marca" name = "marca">
+					<option> Apple  </option>
+					<option> Samsung  </option>
+					<option> Xiaomi  </option>
+					<option> OnePlus  </option>
+					<option> Realme  </option>
+					<option> Motorola  </option>
+					<option> Oppo </option>
+				</select>
+				<br><br>
+				<label for="modelo">Modelo del teléfono</label>
+				<input type="text" name="modelo" id="modelo"><br>
+				<br><hr>	
+				<p>Selecciona la <label for = "fecha"> fecha </label> de compra y el <label for = "estado"> estado </label> del móvil cuando lo compraste </p>
+				<input type = "date" name = "fecha" id = "fecha">
+				<select id = "estado" name = "estado">
+					<option>Nuevo</option>
+					<option>Segunda Mano</option>
+					<option>Reacondicionado</option>
+				</select> <br><br>
+				<p>Marca las reparacionesrealizadas en el teléfono(en caso de ninguna dejar vacío)</p>
+				<div id="checkboxes">
+					<label><input type="checkbox" id="cambio_bateria" value="cambio_bateria">Cambio de batería</label><br>
+					<label><input type="checkbox" id="cambio_pantalla" value="cambio_pantalla">Cambio de pantalla</label><br>
+					<label><input type="checkbox" id="rep_camara" value="reparacion_camara">Reparación de cámara</label><br>
+					<label><input type="checkbox" id="rep_comps" value="raparacion_componentes">Reparación de componentes internos</label><br>
+					<label><input type="checkbox" id="otra" value="otra">Otra reparación</label><br>	
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend> Su opinión</legend>
+				<br>
+				<label for = "nota_general"> Nota general </label>
+				<select id = "nota_general" name = "nota_general">
+					<option> 0  </option>
+					<option> 1  </option>
+					<option> 2  </option>
+					<option> 3  </option>
+					<option> 4  </option>
+					<option> 5  </option>
+					<option> 6 </option>
+					<option> 7  </option>
+					<option> 8  </option>
+					<option> 9  </option>
+					<option> 10 </option>
+				</select>
+				<br><hr>
+				<textarea rows="5" cols="30"></textarea>
+			</fieldset>
+			<br>
+			<input type ="submit" value = "Confirmar">
+		</form>
+			</div>
+    </main>
+	<aside id="reseñas_de_usuarios">
+		<h2>Reseñas de otros usuarios</h2>
+		<div class="reseña_usuario">
+			<h4 class="titulo_reseña">Francisco López - Realme 8 Pro</h4>
+			<p class="nota_general">Nota general: 7</p>
+			<p class="texto_reseña">Móvil perfecto calidad precio, buen rendimiento general y buena duracion de bateria, recomendado!</p>
+			<input type="submit" value="Más detalles">
+		</div>
+		<div class="reseña_usuario">
+			<h4 class="titulo_reseña">Manuel Pérez - iPhone 12 Mini</h4>
+			<p class="nota_general">Nota general: 6</p>
+			<p class="texto_reseña">Lo compré por el tamaño de pantalla que me encanta, pero el gran fallo de éste telófono es la duración de la batería, muy insuficiente para su precio.</p>
+			<input type="submit" value="Más detalles">
+		</div>
+		<div class="reseña_usuario">
+			<h4 class="titulo_reseña">Iker Martinez - Samsung Galaxy A51 lite</h4>
+			<p class="nota_general">Nota general: 9</p>
+			<p class="texto_reseña">Me encanta todo del móvil! Para un uso de una persona con poco conocimiento de tecnología es perfecto! Ademas saca muy buenas fotos.</p>
+			<input type="submit" value="Más detalles">
+		</div>
+	</aside>
+	<footer>
+        <h4>Creado por Eneko Eguiguren Marquinez - Prototipo Web incial</h4>
+        <h5>eneko.eguiguren@opendeusto.es</h5>
+    </footer>
+</body>

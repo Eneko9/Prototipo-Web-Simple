@@ -1,0 +1,119 @@
+@media only screen and (max-width: 400px){
+    body{
+        width: 400px;
+        background-color: gainsboro;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    main{
+        border: 2px solid tomato;
+        margin-left: 2%;
+        width: 90%;
+        padding-bottom: 3%;
+        padding-top: 2%;
+        border-radius: 10px;
+        margin-bottom: 2%;
+    }
+    aside{
+        width: 90%;
+        text-align: center;
+        border: 2px solid tomato;
+        border-radius: 10px;
+        margin-right: 2%;
+        margin-left: 1%;
+    }
+}
+/*elementos repetidos en todos los css*/
+body{
+    margin: 0;
+    background-color: gainsboro;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header{
+    color: tomato;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url("https://image.freepik.com/vector-gratis/banner-presentacion-empresarial-forma-geometrica-azul_1017-32330.jpg");
+    height: 30%;
+    margin: 0;
+    border: 2px solid steelblue;
+}
+h1{
+    font-size: 23px;
+}
+ul#menu{
+    background-color: steelblue;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+li.menu_block{
+    border-radius: 10px;
+    background-color: tomato;
+    display: inline-block;
+    margin: 2% 5%;
+    padding: 1%; 
+}
+#menu_seleccionado{
+    border-radius: 10px;
+    background-color: cornsilk;
+    display: inline-block;
+    margin: 2% 5%;
+    padding: 1%; 
+}
+a.link_menu{
+    color: black;
+}
+li.menu_block:hover{
+    background-color:  cornsilk;
+    color: cornsilk;
+}
+footer{
+    text-align: center;
+    padding: 10px;
+    clear: both;
+    background-color: black;
+    color: blanchedalmond;
+}
+div#texto_principal{
+    text-align: center;
+    font-size: 20px;
+}
+/*elementos repetidos en todos los css*/
+
+main{
+    text-align: center;
+    border: 2px solid tomato;
+    margin-left: 2%;
+    width: 47%;
+    padding-bottom: 3%;
+    padding-top: 2%;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    float: left;
+}
+aside{
+    float: right;
+    width: 47%;
+    text-align: center;
+    border: 2px solid tomato;
+    border-radius: 10px;
+    margin-right: 2%;
+    margin-left: 1%;
+}
+div.reseña_usuario{
+    margin: 1% 4%;
+    border: 1px dotted steelblue;
+    border-radius: 10px;
+    padding: 1%;
+}
+p.nota_general{
+    font-weight: bold ;
+}
+fieldset{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+div#checkboxes{
+    padding-left: 20%;
+    text-align: left;
+}
